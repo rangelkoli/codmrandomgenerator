@@ -7,7 +7,7 @@ var attachment = [
   'Optic',
   'Stock',
   'Perk',
-  'Lazer',
+  'Laser',
   'Underbarrel',
   'Ammunition',
   'Rear Grip'
@@ -58,8 +58,17 @@ function shuffle (array) {
 }
 
 btn1.addEventListener('click', () => {
-  document.getElementById('attachment').style.display = 'block'
+  document.getElementById('muzzle').innerText = ''
+  document.getElementById('barrel').innerText = ''
+  document.getElementById('optic').innerText = ''
+  document.getElementById('stock').innerText = ''
+  document.getElementById('perks').innerText = ''
+  document.getElementById('laser').innerText = ''
+  document.getElementById('underbarrel').innerText = ''
+  document.getElementById('reargrip').innerText = ''
+  document.getElementById('ammunition').innerText = ''
 
+  document.getElementById('attachment').style.display = 'block'
   let index = getRandomNumber(0, users.length - 1)
   let weapon = (result.innerText = users[index])
 
@@ -129,42 +138,53 @@ btn1.addEventListener('click', () => {
         'Stopping Power Reload'
       ]
       shuffledattachments = shuffle(attachment)
+
       for (let i = 0; i < 5; i++) {
         console.log(shuffledattachments[i])
         if (shuffledattachments[i] == 'Muzzle') {
+          document.getElementById('muzzle').style.display = 'block'
+
           shuffledmuzzle = shuffle(muzzleattach)
           document.getElementById('muzzle').innerText = shuffledmuzzle[0]
         }
         if (shuffledattachments[i] == 'Barrel') {
+          document.getElementById('barrel').style.display = 'block'
           shuffledbarrel = shuffle(barrelattach)
           document.getElementById('barrel').innerText = shuffledbarrel[0]
         }
         if (shuffledattachments[i] == 'Optic') {
+          document.getElementById('optic').style.display = 'block'
           shuffledoptic = shuffle(optic)
           document.getElementById('optic').innerText = shuffledoptic[0]
         }
         if (shuffledattachments[i] == 'Stock') {
+          document.getElementById('stock').style.display = 'block'
           shuffledstock = shuffle(stock)
           document.getElementById('stock').innerText = shuffledstock[0]
         }
-        if (shuffledattachments[i] == 'Perks') {
+        if (shuffledattachments[i] == 'Perk') {
+          document.getElementById('perks').style.display = 'block'
           shuffledperks = shuffle(perks)
           document.getElementById('perks').innerText = shuffledperks[0]
         }
         if (shuffledattachments[i] == 'Laser') {
+          document.getElementById('laser').style.display = 'block'
           shuffledlaser = shuffle(laser)
           document.getElementById('laser').innerText = shuffledlaser[0]
         }
         if (shuffledattachments[i] == 'Underbarrel') {
+          document.getElementById('underbarrel').style.display = 'block'
           shuffledunderbarrel = shuffle(underbarrel)
           document.getElementById('underbarrel').innerText =
             shuffledunderbarrel[0]
         }
         if (shuffledattachments[i] == 'Rear Grip') {
+          document.getElementById('reargrip').style.display = 'block'
           shuffledreargrip = shuffle(reargrip)
           document.getElementById('reargrip').innerText = shuffledreargrip[0]
         }
         if (shuffledattachments[i] == 'Ammunition') {
+          document.getElementById('ammunition').style.display = 'block'
           shuffledammo = shuffle(ammunition)
           document.getElementById('ammunition').innerText = shuffledammo[0]
         }
@@ -173,16 +193,6 @@ btn1.addEventListener('click', () => {
       attachments.innerText = 'Type 25 Loadout'
 
       document.getElementById('loadoutimage').src = 'weaponimages/Type251.jpg'
-
-      switch (attachment) {
-        case 'Muzzle':
-          let muzzle = document.querySelector('h3')
-          var textt1 = muzzleattach[getRandomNumber(0, muzzleattach.length - 1)]
-          remove_array_value(attachment)
-          console.log(muzzleattach)
-          console.log(textt1)
-          muzzle.innerText = textt1
-      }
 
       //let attachment = arrayRemoveIndex(attachments, arr.indexOf(textt1))
 

@@ -30,3 +30,30 @@ p{
 .attachment{
     display: none;
 }
+#muzzle{
+    display: none;
+}
+#barrel{
+    display: none;
+}
+#optic{
+    display: none;
+}
+#stock{
+    display: none;
+}
+#perks{
+    display: none;
+}
+#laser{
+    display: none;
+}
+#underbarrel{
+    display: none;
+}
+#reargrip{
+    display: none;
+}
+#ammunition{
+    display: none;
+}
