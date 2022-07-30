@@ -1,0 +1,32 @@
+.container{
+    border: 5px solid black;
+    height: auto;
+    width: 1500px;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+
+}
+.row{
+    display: none;
+}
+
+button{
+    align-self: center;
+    text-align: center;
+}
+
+p{
+    font-size: 30px;
+}
+
+.loadoutimage{
+    width: 100%;
+}
+#barrel{
+    font-size: 30px;
+}
+
+.attachment{
+    display: none;
+}
