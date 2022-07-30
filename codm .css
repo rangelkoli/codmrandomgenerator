@@ -1,12 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #f967ba, #bd60ae, #845696, #554876, #333650, #313d54, #314356, #344958, #3e7186, #419db1, #48cbd5, #5ffbf1);
+}
 .container{
-    border: 5px solid black;
+    border: 1px solid black;
     height: auto;
     width: 1500px;
     align-self: center;
     text-align: center;
     padding: 10px;
-
+    color: aliceblue;
 }
+
 .row{
     display: none;
 }
