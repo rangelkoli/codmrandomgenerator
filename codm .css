@@ -7,7 +7,7 @@ body{
 .container{
     border: 1px solid black;
     height: auto;
-    width: 1500px;
+    width: 80%;
     align-self: center;
     text-align: center;
     padding: 10px;
