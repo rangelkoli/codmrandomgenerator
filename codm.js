@@ -6,13 +6,13 @@ let users = [
   'AK117',
   'AK47',
   'ASM10'
-  // 'M4',
-  // 'BK57',
-  // 'LK24',
-  // 'ICR1',
-  // 'Man-O-War',
-  // 'KN44',
-  // 'HBRa3'
+  'M4',
+  'BK57',
+  'LK24',
+  'ICR1',
+  'Man-O-War',
+  'KN44',
+  'HBRa3'
 ]
 var attachment = [
   'Muzzle',
