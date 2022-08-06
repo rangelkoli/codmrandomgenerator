@@ -5,14 +5,22 @@ let users = [
   'M16',
   'AK117',
   'AK47',
-  'ASM10'
+  'ASM10',
   'M4',
   'BK57',
   'LK24',
   'ICR1',
   'Man-O-War',
   'KN44',
-  'HBRa3'
+  'HBRa3',
+  'HVK-30',
+  'DR-H',
+  'PeacekeeperMK2',
+  'FR556',
+  'ASVal',
+  'M13',
+  'Swordfish',
+  'Kilo141'
 ]
 var attachment = [
   'Muzzle',
@@ -1281,17 +1289,25 @@ btn1.addEventListener('click', () => {
       document.getElementById('loadoutimage').src = 'weaponimages/FR556.jpg'
       break
     case 'ASVal':
+      let asvbarrel = [
+        'MIP 200mm Mid-Range Barrel',
+        'MIP 105mm Melee Barrel',
+        'MIP Quick Response Barrel'
+      ]
+      let asvstock = [
+        'OWC Skeleton Stock',
+        'YKM Combat Stock',
+        'RTC Steady Stock',
+        'OWC RAnger Stock'
+      ]
+      let asvammo = ['Large Extended Mag B', 'Fast Reload', '15 Round FMJ']
+
       for (let i = 0; i < 5; i++) {
         console.log(shuffledattachments[i])
-        if (shuffledattachments[i] == 'Muzzle') {
-          document.getElementById('muzzle').style.display = 'block'
 
-          shuffledmuzzle = shuffle(muzzleattach)
-          document.getElementById('muzzle').innerText = shuffledmuzzle[0]
-        }
         if (shuffledattachments[i] == 'Barrel') {
           document.getElementById('barrel').style.display = 'block'
-          shuffledbarrel = shuffle(bk57barrel)
+          shuffledbarrel = shuffle(asvbarrel)
           document.getElementById('barrel').innerText = shuffledbarrel[0]
         }
         if (shuffledattachments[i] == 'Optic') {
@@ -1301,7 +1317,7 @@ btn1.addEventListener('click', () => {
         }
         if (shuffledattachments[i] == 'Stock') {
           document.getElementById('stock').style.display = 'block'
-          shuffledstock = shuffle(bk57stock)
+          shuffledstock = shuffle(asmstock)
           document.getElementById('stock').innerText = shuffledstock[0]
         }
         if (shuffledattachments[i] == 'Perk') {
@@ -1327,7 +1343,7 @@ btn1.addEventListener('click', () => {
         }
         if (shuffledattachments[i] == 'Ammunition') {
           document.getElementById('ammunition').style.display = 'block'
-          shuffledammo = shuffle(bk57ammo)
+          shuffledammo = shuffle(asvammo)
           document.getElementById('ammunition').innerText = shuffledammo[0]
         }
       }
@@ -1335,6 +1351,23 @@ btn1.addEventListener('click', () => {
       document.getElementById('loadoutimage').src = 'weaponimages/ASVal.jpg'
       break
     case 'M13':
+      let m13barrel = [
+        'RTC Silencer Barrel',
+        'RTC Mini Barrel',
+        'RTC heavy Long Barrel'
+      ]
+      let m13stock = [
+        'RTC Combat Stock',
+        'No Stock',
+        'M13 Skeleton Stock',
+        'RTC Assault Stock'
+      ]
+      let m13ammo = [
+        'Large Extended Mag B',
+        'Extended Mag A',
+        '.300 30 Round Reload',
+        '.300 RTC Double Stack 40 Round'
+      ]
       for (let i = 0; i < 5; i++) {
         console.log(shuffledattachments[i])
         if (shuffledattachments[i] == 'Muzzle') {
@@ -1345,7 +1378,7 @@ btn1.addEventListener('click', () => {
         }
         if (shuffledattachments[i] == 'Barrel') {
           document.getElementById('barrel').style.display = 'block'
-          shuffledbarrel = shuffle(bk57barrel)
+          shuffledbarrel = shuffle(m13barrel)
           document.getElementById('barrel').innerText = shuffledbarrel[0]
         }
         if (shuffledattachments[i] == 'Optic') {
@@ -1355,7 +1388,7 @@ btn1.addEventListener('click', () => {
         }
         if (shuffledattachments[i] == 'Stock') {
           document.getElementById('stock').style.display = 'block'
-          shuffledstock = shuffle(bk57stock)
+          shuffledstock = shuffle(m13stock)
           document.getElementById('stock').innerText = shuffledstock[0]
         }
         if (shuffledattachments[i] == 'Perk') {
@@ -1381,7 +1414,7 @@ btn1.addEventListener('click', () => {
         }
         if (shuffledattachments[i] == 'Ammunition') {
           document.getElementById('ammunition').style.display = 'block'
-          shuffledammo = shuffle(bk57ammo)
+          shuffledammo = shuffle(m13ammo)
           document.getElementById('ammunition').innerText = shuffledammo[0]
         }
       }
@@ -1389,12 +1422,135 @@ btn1.addEventListener('click', () => {
       document.getElementById('loadoutimage').src = 'weaponimages/M13.jpg'
       break
     case 'Swordfish':
-      attachmentsshuffle()
+      let swbarrel = ['MIP Light', 'MIP Extended Light Barrel', 'OWC Ranger']
+      let swstock = [
+        'YKM Light Stock',
+        'OWC Skeleton Stock',
+        'RTC Steady Stock'
+      ]
+      let swammo = ['Extended Mag A', 'Fast Reload', 'Halberd Mag']
+
+      for (let i = 0; i < 5; i++) {
+        console.log(shuffledattachments[i])
+        if (shuffledattachments[i] == 'Muzzle') {
+          document.getElementById('muzzle').style.display = 'block'
+
+          shuffledmuzzle = shuffle(muzzleattach)
+          document.getElementById('muzzle').innerText = shuffledmuzzle[0]
+        }
+        if (shuffledattachments[i] == 'Barrel') {
+          document.getElementById('barrel').style.display = 'block'
+          shuffledbarrel = shuffle(swbarrel)
+          document.getElementById('barrel').innerText = shuffledbarrel[0]
+        }
+        if (shuffledattachments[i] == 'Optic') {
+          document.getElementById('optic').style.display = 'block'
+          shuffledoptic = shuffle(optic)
+          document.getElementById('optic').innerText = shuffledoptic[0]
+        }
+        if (shuffledattachments[i] == 'Stock') {
+          document.getElementById('stock').style.display = 'block'
+          shuffledstock = shuffle(swstock)
+          document.getElementById('stock').innerText = shuffledstock[0]
+        }
+        if (shuffledattachments[i] == 'Perk') {
+          document.getElementById('perks').style.display = 'block'
+          shuffledperks = shuffle(perks)
+          document.getElementById('perks').innerText = shuffledperks[0]
+        }
+        if (shuffledattachments[i] == 'Laser') {
+          document.getElementById('laser').style.display = 'block'
+          shuffledlaser = shuffle(laser)
+          document.getElementById('laser').innerText = shuffledlaser[0]
+        }
+        if (shuffledattachments[i] == 'Underbarrel') {
+          document.getElementById('underbarrel').style.display = 'block'
+          shuffledunderbarrel = shuffle(underbarrel)
+          document.getElementById('underbarrel').innerText =
+            shuffledunderbarrel[0]
+        }
+        if (shuffledattachments[i] == 'Rear Grip') {
+          document.getElementById('reargrip').style.display = 'block'
+          shuffledreargrip = shuffle(reargrip)
+          document.getElementById('reargrip').innerText = shuffledreargrip[0]
+        }
+        if (shuffledattachments[i] == 'Ammunition') {
+          document.getElementById('ammunition').style.display = 'block'
+          shuffledammo = shuffle(swammo)
+          document.getElementById('ammunition').innerText = shuffledammo[0]
+        }
+      }
       attachments.innerText = 'Swordfish Loadout'
       document.getElementById('loadoutimage').src = 'weaponimages/Swordfish.jpg'
       break
     case 'Kilo141':
-      attachmentsshuffle()
+      let kilobarrel = [
+        'MIP Extended Light Barrel',
+        'OWC Marksman',
+        'YKM Integral Suppressor Light'
+      ]
+      let kilostock = [
+        'No Stock',
+        'OWC Skeleton Stock',
+        'YKM Combat Stock',
+        'RTC Steady Stock'
+      ]
+      let kiloammo = [
+        'Extended Mag A',
+        'Large Extendede Mag B',
+        '100 Round Reload'
+      ]
+
+      for (let i = 0; i < 5; i++) {
+        console.log(shuffledattachments[i])
+        if (shuffledattachments[i] == 'Muzzle') {
+          document.getElementById('muzzle').style.display = 'block'
+
+          shuffledmuzzle = shuffle(muzzleattach)
+          document.getElementById('muzzle').innerText = shuffledmuzzle[0]
+        }
+        if (shuffledattachments[i] == 'Barrel') {
+          document.getElementById('barrel').style.display = 'block'
+          shuffledbarrel = shuffle(kilobarrel)
+          document.getElementById('barrel').innerText = shuffledbarrel[0]
+        }
+        if (shuffledattachments[i] == 'Optic') {
+          document.getElementById('optic').style.display = 'block'
+          shuffledoptic = shuffle(optic)
+          document.getElementById('optic').innerText = shuffledoptic[0]
+        }
+        if (shuffledattachments[i] == 'Stock') {
+          document.getElementById('stock').style.display = 'block'
+          shuffledstock = shuffle(kilostock)
+          document.getElementById('stock').innerText = shuffledstock[0]
+        }
+        if (shuffledattachments[i] == 'Perk') {
+          document.getElementById('perks').style.display = 'block'
+          shuffledperks = shuffle(perks)
+          document.getElementById('perks').innerText = shuffledperks[0]
+        }
+        if (shuffledattachments[i] == 'Laser') {
+          document.getElementById('laser').style.display = 'block'
+          shuffledlaser = shuffle(laser)
+          document.getElementById('laser').innerText = shuffledlaser[0]
+        }
+        if (shuffledattachments[i] == 'Underbarrel') {
+          document.getElementById('underbarrel').style.display = 'block'
+          shuffledunderbarrel = shuffle(underbarrel)
+          document.getElementById('underbarrel').innerText =
+            shuffledunderbarrel[0]
+        }
+        if (shuffledattachments[i] == 'Rear Grip') {
+          document.getElementById('reargrip').style.display = 'block'
+          shuffledreargrip = shuffle(reargrip)
+          document.getElementById('reargrip').innerText = shuffledreargrip[0]
+        }
+        if (shuffledattachments[i] == 'Ammunition') {
+          document.getElementById('ammunition').style.display = 'block'
+          shuffledammo = shuffle(kiloammo)
+          document.getElementById('ammunition').innerText = shuffledammo[0]
+        }
+      }
       attachments.innerText = 'Kilo141 Loadout'
       document.getElementById('loadoutimage').src = 'weaponimages/Kilo141.jpg'
       break
