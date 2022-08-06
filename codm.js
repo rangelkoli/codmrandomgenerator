@@ -89,6 +89,8 @@ btn1.addEventListener('click', () => {
   document.getElementById('ammunition').innerText = ''
 
   document.getElementById('attachment').style.display = 'block'
+  //document.getElementById('generateloadout').style.display = 'none'
+
   let index = getRandomNumber(0, users.length - 1)
   let weapon = (result.innerText = users[index])
   let muzzleattach = [

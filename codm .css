@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luckiest+Guy&family=Montserrat:wght@700&family=Nosifer&family=Patua+One&display=swap');
 body{
     background-color: black;
     color: white;
@@ -5,6 +6,8 @@ body{
     /* background-color: #000000; */
     /* background-image: linear-gradient(to right top, #f967ba, #bd60ae, #845696, #554876, #333650, #313d54, #314356, #344958, #3e7186, #419db1, #48cbd5, #5ffbf1); */
     background: rgb(7,6,40);
+    font-family: 'Patua One', cursive;
+
 background: linear-gradient(0deg, rgb(64, 11, 144) 0%, rgb(0, 0, 0) 100%);
 }
 .container{
@@ -14,16 +17,18 @@ background: linear-gradient(0deg, rgb(64, 11, 144) 0%, rgb(0, 0, 0) 100%);
     align-self: center;
     text-align: center;
     color: aliceblue;
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+
 }
 
 .loadoutgen {
     width: 30%;
     height: 30%;
-    font-size: large;
     border: none;
     outline: none;
     color: #fff;
-    background: #111;
+    background: #5B7DB1;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -31,51 +36,12 @@ background: linear-gradient(0deg, rgb(64, 11, 144) 0%, rgb(0, 0, 0) 100%);
     border-radius: 10px;
 }
 
-.loadoutgen:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+.loadoutgen:hover{
+    background-color: #61A4BC;
+    color: black;
 }
-
-.loadoutgen:active {
-    color: #000
-}
-
-.loadoutgen:active:after {
-    background: transparent;
-}
-
-.loadoutgen:hover:before {
-    opacity: 1;
-}
-
-.loadoutgen:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+h3{
+    font-size: 15px;
 }
 .row{
     display: none;
@@ -87,7 +53,7 @@ button{
 }
 
 p{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .loadoutimage{
@@ -127,4 +93,10 @@ p{
 }
 #ammunition{
     display: none;
+}
+
+#maintext {
+    margin-top: 25px;
+    font-size: 20px;
+
 }
