@@ -1,17 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Luckiest+Guy&family=Montserrat:wght@700&family=Nosifer&family=Patua+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+
+}
 body{
     background-color: black;
     color: white;
     min-height: 100vh;
-    /* background-color: #000000; */
-    /* background-image: linear-gradient(to right top, #f967ba, #bd60ae, #845696, #554876, #333650, #313d54, #314356, #344958, #3e7186, #419db1, #48cbd5, #5ffbf1); */
     background: rgb(7,6,40);
     font-family: 'Patua One', cursive;
+    box-sizing: border-box;
 
 background: linear-gradient(0deg, rgb(1, 3, 88) 0%, rgb(0, 0, 0) 100%);
 }
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 10px;
+      background-color: lightblue;
+      background: linear-gradient(0deg, rgb(194, 195, 216)rgb(198, 126, 126)0, 0) 100%);
+
+    }
+    .container{
+        font-size: 10px;
+    }
+  }
 .container{
     height: auto;
+    width: 100%;
     align-self: center;
     text-align: center;
     color: aliceblue;
@@ -59,11 +77,18 @@ p{
     width: 100%;
     border: 5px solid black;
 }
-
-
+.challenge{
+    font-size: 30px;
+}
+#challenge{
+    display: none;
+}
+.challenge h4{
+    font-size: 50px;
+}
 .attachment{
     display: none;
-    width: 10%;
+    width: 100%;
 }
 #muzzle{
     display: none;
@@ -98,3 +123,4 @@ p{
     font-size: 20px;
 
 }
+

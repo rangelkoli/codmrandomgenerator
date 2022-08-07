@@ -157,6 +157,16 @@ btn1.addEventListener('click', () => {
     'Stopping Power Reload'
   ]
 
+  let challenge = [
+    'Ranked Nuke',
+    'Relentless Medal x2',
+    '20 Kills Without Dying'
+  ]
+  let challenge1 = document.getElementsByClassName('challenge')
+  shuffledchallenge = shuffle(challenge)
+  document.getElementById('challenge').style.display = 'block'
+  document.getElementById('challenge').innerText = shuffledchallenge[0]
+
   switch (weapon) {
     case 'Type25':
       attachments.innerText = 'Type 25 Loadout'
@@ -212,7 +222,7 @@ btn1.addEventListener('click', () => {
           document.getElementById('ammunition').innerText = shuffledammo[0]
         }
       }
-      document.getElementById('loadoutimage').src = 'weaponimages/Type251.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/Type251.jpg'
       break
     case 'M16':
       //M16 Attachments
@@ -231,7 +241,7 @@ btn1.addEventListener('click', () => {
 
       console.log('M16')
       attachments.innerText = 'M16 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/M16.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/M16.jpg'
       shuffledattachments = shuffle(attachment)
 
       for (let i = 0; i < 5; i++) {
@@ -351,7 +361,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'AK117 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/AK117.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/AK117.jpg'
       break
     case 'AK47':
       //AK47
@@ -426,7 +436,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'AK47 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/AK47.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/AK47.jpg'
       break
     case 'ASM10':
       //ASM 10 Attachments
@@ -489,7 +499,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'ASM10 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/ASM10.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/ASM10.jpg'
       break
     // case 'ASM10':
     //   for (let i = 0; i < 5; i++) {
@@ -543,7 +553,7 @@ btn1.addEventListener('click', () => {
     //     }
     //   }
     //   attachments.innerText = 'ASM10 Loadout'
-    //   document.getElementById('loadoutimage').src = 'weaponimages/ASM10.jpg'
+    //   //document.getElementById('loadoutimage').src = 'weaponimages/ASM10.jpg'
     //   break
     case 'M4':
       //M4 Attachments
@@ -606,7 +616,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'M4 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/M4.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/M4.jpg'
       break
     case 'BK57':
       let bk57barrel = [
@@ -675,7 +685,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'BK57 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/BK57.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/BK57.jpg'
       break
     case 'LK24':
       let lkbarrel = [
@@ -741,7 +751,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'LK24 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/LK24.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/LK24.jpg'
       break
     case 'ICR1':
       let icrbarrel = [
@@ -811,7 +821,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'ICR1 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/ICR1.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/ICR1.jpg'
       break
     case 'Man-O-War':
       let manmuzzle = [
@@ -877,7 +887,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'Man-O-War Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/Man-O-War.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/Man-O-War.jpg'
       break
     case 'KN44':
       let knbarrel = ['MIP Light Barrel(Short)', 'OWC Ranger', 'OWC Marksman']
@@ -940,7 +950,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'KN44 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/KN44.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/KN44.jpg'
       break
     case 'HBRa3':
       let hbrbarrel = ['MIP Light', 'OWC Ranger', 'OWC Marksman']
@@ -1003,7 +1013,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'HBRa3 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/HBRa3.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/HBRa3.jpg'
       break
     case 'HVK-30':
       let hvkbarrel = [
@@ -1068,7 +1078,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'HVK-30 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/HVK-30.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/HVK-30.jpg'
       break
     case 'DR-H':
       let drhbarrel = ['OWC Marksman', 'MIP Light', 'OWC Ranger']
@@ -1136,7 +1146,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'DR-H Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/DR-H.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/DR-H.jpg'
       break
     case 'PeacekeeperMK2':
       let pcmuzzle = [
@@ -1226,8 +1236,8 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'PeacekeeperMK2 Loadout'
-      document.getElementById('loadoutimage').src =
-        'weaponimages/PeacekeeperMK2.jpg'
+      //document.getElementById('loadoutimage').src =
+      'weaponimages/PeacekeeperMK2.jpg'
       break
     case 'FR556':
       let frbarrel = [
@@ -1288,7 +1298,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'FR556 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/FR556.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/FR556.jpg'
       break
     case 'ASVal':
       let asvbarrel = [
@@ -1350,7 +1360,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'ASVal Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/ASVal.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/ASVal.jpg'
       break
     case 'M13':
       let m13barrel = [
@@ -1421,7 +1431,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'M13 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/M13.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/M13.jpg'
       break
     case 'Swordfish':
       let swbarrel = ['MIP Light', 'MIP Extended Light Barrel', 'OWC Ranger']
@@ -1483,7 +1493,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'Swordfish Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/Swordfish.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/Swordfish.jpg'
       break
     case 'Kilo141':
       let kilobarrel = [
@@ -1554,7 +1564,7 @@ btn1.addEventListener('click', () => {
         }
       }
       attachments.innerText = 'Kilo141 Loadout'
-      document.getElementById('loadoutimage').src = 'weaponimages/Kilo141.jpg'
+      //document.getElementById('loadoutimage').src = 'weaponimages/Kilo141.jpg'
       break
   }
 })
