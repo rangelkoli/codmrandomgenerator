@@ -10,11 +10,13 @@
         <title>CODM Random Loadout Generator</title>
     </head>
     <body>
+  
+
       <div class="container">
         <h2 id="maintext">Welcome to CODM Random Loadout Generator. Click on the button to Generate a Loadout</h2>
       </div>
         <div class="container" id="maincontainer">
-            <button type="button" id="loadoutgen" class="loadoutgen">Generate Loadout</button>
+            <button type="button" onclick="hello()" id="loadoutgen" class="loadoutgen">Generate Loadout</button>
             
             <p>Attachments</p>
 
@@ -81,9 +83,176 @@
             
             
         </div>
+        <div class="mainmainmain" id="maintext">
+          asdbsao
+        </div>
+        <script>
+          function shuffle (array) {
+              let currentIndex = array.length,
+                randomIndex
+            
+              // While there remain elements to shuffle.
+              while (currentIndex != 0) {
+                // Pick a remaining element.
+                randomIndex = Math.floor(Math.random() * currentIndex)
+                currentIndex--
+            
+                // And swap it with the current element.
+                ;[array[currentIndex], array[randomIndex]] = [
+                  array[randomIndex],
+                  array[currentIndex]
+                ]
+              }
+            
+              return array
+            }
+function hello(){
+    fetch('weapons.json')
+    // get the JSON data
+    .then(response => response.json())
+    // use (display) the JSON data
+    .then(function (data) {
+      appendData(data)
+    })
+}
 
-        <script src="codm.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+function appendData (data) {
+var mainContainer = document.getElementById('attachmentstext')
+document.getElementById('muzzle').innerText = ''
+document.getElementById('barrel').innerText = ''
+document.getElementById('optic').innerText = ''
+document.getElementById('stock').innerText = ''
+document.getElementById('perks').innerText = ''
+document.getElementById('laser').innerText = ''
+document.getElementById('underbarrel').innerText = ''
+document.getElementById('reargrip').innerText = ''
+document.getElementById('ammunition').innerText = ''
+document.getElementById('attachment').style.display = 'block'
+
+  attachment = [
+  "laser",
+  "muzzleattach",
+  "barrelattach",
+  "optic",
+  "stock",
+  "perks",
+  "underbarrel",
+  "reargrip",
+  "ammo"
+  ]
+  shuffle(attachment)
+  data1 = shuffle(attachment)
+  maindata = shuffle(data)
+  const a = shuffle(attachment)
+  b = data[0].attachments
+  console.log("----------")
+ // var q = document.createElement('h1');
+ // mainContainer.appendChild(q)
+  console.log(data1)
+  document.getElementById('generateloadout').style.display = 'block'
+  document.getElementById('generateloadout').innerText = maindata[0].gun
+  //q.innerHTML = maindata[0].gun
+ for (var i = 0; i < 5; i++) {
+  switch(a[i]) {
+      case ('laser'):
+          c = maindata[0].attachments.laser
+          d = shuffle(c)
+          console.log(d[0])
+          document.getElementById('laser').style.display = 'block'
+          document.querySelector('#laser').innerText = d[0]
+
+        // code block
+        break;
+        case ('muzzleattach'):
+        // code block
+        c = maindata[0].attachments.muzzleattach
+        d = shuffle(c)
+        document.getElementById('muzzle').style.display = 'block'
+        document.getElementById('muzzle').innerText = d[0]
+        console.log(d[0])
+        break;
+       
+        case ('barrelattach'):
+        c = maindata[0].attachments.barrelattach
+        d = shuffle(c)
+        console.log(d[0])
+        document.getElementById('barrel').style.display = 'block'
+        document.getElementById('barrel').innerText = d[0]
+
+      // code block
+      break;
+      case ('optic'):
+          c = maindata[0].attachments.optic
+          d = shuffle(c)
+          console.log(d[0])
+          document.getElementById('optic').style.display = 'block'
+          document.getElementById('optic').innerText = d[0]
+
+        // code block
+        break;
+        case ('stock'):
+          c = maindata[0].attachments.stock
+          d = shuffle(c)
+          console.log(d[0])
+          document.getElementById('stock').style.display = 'block'
+          document.getElementById('stock').innerText = d[0]
+
+          // code block
+        break;
+        case ('perks'):
+          c = maindata[0].attachments.perks
+          d = shuffle(c)
+          document.getElementById('perks').style.display = 'block'
+
+          document.getElementById('perks').innerText = d[0]
+          console.log(d[0])
+        // code block
+        break;
+        case ('underbarrel'):
+          c = maindata[0].attachments.underbarrel
+          d = shuffle(c)
+          document.getElementById('underbarrel').style.display = 'block'
+          document.getElementById('underbarrel').innerText = d[0]
+          console.log(d[0])
+        // code block
+        break;
+        case ('reargrip'):
+          c = maindata[0].attachments.reargrip
+          d = shuffle(c)
+          document.getElementById('reargrip').style.display = 'block'
+          document.getElementById('reargrip').innerText = d[0]
+          console.log(d[0])
+        // code block
+        break;
+        case ('ammo'):
+        c = maindata[0].attachments.ammo
+        d = shuffle(c)
+        document.getElementById('ammunition').style.display = 'block'
+        document.getElementById('ammunition').innerText = d[0]
+        console.log(d[0])
+        // code block
+        break;  
+        case ('mainsad'):
+        c = maindata[0].attachments.ammo
+        d = shuffle(c)
+        document.getElementById('ammsadaso').style.display = 'block'
+        document.getElementById('aasdasd  mmo').innerText = d[0]
+        console.log(d[0])
+        // code block
+        break;  
+      default:
+        // code block
+        console.log("None")
+    }
+  //var p = document.createElement('div');
+ // p.innerHTML = d[0]
+// mainContainer.appendChild(p)
+ }
+}
+
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     </body>
 </html>

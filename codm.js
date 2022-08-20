@@ -33,7 +33,24 @@ var attachment = [
   'Ammunition',
   'Rear Grip'
 ]
+fetch('weapons.json')
+  // get the JSON data
+  .then(response => response.json())
+  // use (display) the JSON data
+  .then(data => appendData(data))
 
+function appendData (data) {
+  var mainContainer = document.getElementsByClassName('mainmainmain')
+  mainContainer.innerHTML = data[1].type
+  // const div = document.createElement('div')
+  // div.innerHTML = data[1].gun
+  // mainContainer.appendChild(div)
+  // for (var i = 0; i < data.length; i++) {
+  //   var div = document.createElement('div')
+  //   div.innerHTML = 'Name: ' + data[i].gun + ' ' + data[i].type
+  //   mainContainer.appendChild(div)
+  // }
+}
 let attachments = document.querySelector('p')
 
 function getRandomNumber (min, max) {

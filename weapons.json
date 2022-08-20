@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "gun": "Type-25",
+    "type": "AR",
+  
+    "attachments": {
+      "laser": [
+        "OWC Laser",
+        "RTC Laser 1mW",
+        "MIP Laser 5mW"
+      ],
+      "muzzleattach": [
+      "Monolithic Suppressor",
+      "Tactical Suppressor",
+      "OWC Light Suppressor",
+      "OWC Light Compensator",
+      "MIP Light Flash Guard",
+      "RTC Light Muzzle Brake"
+      ],
+      "barrelattach" : [
+        "MIP Light",
+      "MIP Light Barrel(Short)",
+      "MIP Extended Light Barrel"
+      ],
+      "optic": [
+        "Classic Red Dot",
+      "Red Dot Sight 1",
+      "Red Dot Sight 2",
+      "Red Dot Sight 3",
+      "Red Dot Sight 4",
+      "Red Dot Sight 5",
+      "Red Dot Sight 6",
+      "Classic Holographic Sight 1",
+      "Classic Holographic Sight 2",
+      "Classic Holographic Sight 3",
+      "Tactical Scope",
+      "3X Tactical Scope 1",
+      "3X Tactical Scope 2",
+      "3X Tactical Scope 1",
+      "OWC 4.4X Tactical Scope",
+      "RTC 4.4X Tactical Scope"
+      ],
+      "stock": [
+        "YKM Light Stock",
+         "YKM Combat Stock",
+          "RTC Steady Stock"
+      ],
+      "perks":[
+        "FMJ",
+      "Sleight of hand",
+      "Wounding",
+      "Full Ammo",
+      "Disable",
+      "Tough",
+      "Long Shot",
+      "Melee Master"
+      ],
+      "underbarrel": [
+        "Strike Foregrip",
+      "Merc Foregrip",
+      "Operator Foregrip",
+      "Ranger Foregrip",
+      "Tactical Foregrip A"
+      ],
+      "reargrip":[
+        "Granulated Grip Tape",
+      "Rubberrized Grip Tape",
+      "Stipped Grip Tape"
+      ],
+      "ammo": [
+      "38 Round Extended Mag",
+      "46 Round Extended Mag",
+      "Fast Reload",
+      "42 Round Fast Reload",
+      "Stopping Power Reload"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "gun": "M16",
+    "type": "AR",
+  
+    "attachments": {
+      "laser": [
+        "OWC Laser",
+        "RTC Laser 1mW",
+        "MIP Laser 5mW"
+      ],
+      "muzzleattach": [
+      "Monolithic Suppressor",
+      "Tactical Suppressor",
+      "OWC Light Suppressor",
+      "OWC Light Compensator",
+      "MIP Light Flash Guard",
+      "RTC Light Muzzle Brake"
+      ],
+      "barrelattach" : [
+        "OWC Marksman",
+        "MIP Light Barrel(Short)",
+        "YKM Integral Suppressor Light"
+      ],
+      "optic": [
+        "Classic Red Dot",
+      "Red Dot Sight 1",
+      "Red Dot Sight 2",
+      "Red Dot Sight 3",
+      "Red Dot Sight 4",
+      "Red Dot Sight 5",
+      "Red Dot Sight 6",
+      "Classic Holographic Sight 1",
+      "Classic Holographic Sight 2",
+      "Classic Holographic Sight 3",
+      "Tactical Scope",
+      "3X Tactical Scope 1",
+      "3X Tactical Scope 2",
+      "3X Tactical Scope 1",
+      "OWC 4.4X Tactical Scope",
+      "RTC 4.4X Tactical Scope"
+      ],
+      "stock": [
+        "No stock",
+        "YKM Light Stock",
+        "YKM Combat Stock",
+        "MIP Strike Stock"
+      ],
+      "perks":[
+        "FMJ",
+      "Sleight of hand",
+      "Wounding",
+      "Full Ammo",
+      "Disable",
+      "Tough",
+      "Long Shot",
+      "Melee Master"
+      ],
+      "underbarrel": [
+        "Strike Foregrip",
+      "Merc Foregrip",
+      "Operator Foregrip",
+      "Ranger Foregrip",
+      "Tactical Foregrip A"
+      ],
+      "reargrip":[
+        "Granulated Grip Tape",
+      "Rubberrized Grip Tape",
+      "Stipped Grip Tape"
+      ],
+      "ammo": [
+        "39 Round Extended Mag", 
+        "48 Round Extended Mag"
+      ]
+    }
+  }
+]
