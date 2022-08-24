@@ -74,7 +74,39 @@
             
             </div>
 
-                
+            <div class="extras" id="extras">
+              <div class="container">
+               
+                <div class="row">
+                  <div class="col">
+                  
+                    <div class="operator" id="operator">
+                      Operator Skill
+                    </div>
+                    <div class="lethal" id="lethal">
+                      lethal 
+                    </div>
+                    <div class="tactical" id="tactical">
+                      tactical
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="scrorestreaks" id="scorestreaks">
+                      scrorestreaks
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="Perks">
+                      Perks
+                    </div>
+                    <div class="perkred" id="perkred"></div>
+                    <div class="perkgreen" id="perkgreen"></div>
+                    <div class="perkblue" id="perkblue"></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>   
             </div>
             
         </div>
@@ -126,7 +158,13 @@ document.getElementById('laser').innerText = ''
 document.getElementById('underbarrel').innerText = ''
 document.getElementById('reargrip').innerText = ''
 document.getElementById('ammunition').innerText = ''
+document.getElementById('operator').innerText = ''
+document.getElementById('lethal').innerText = ''
+document.getElementById('tactical').innerText = ''
+document.getElementById('scorestreaks').innerText = ''
+
 document.getElementById('attachment').style.display = 'block'
+document.getElementById('extras').style.display = 'block'
 
   attachment = [
   "laser",
@@ -139,14 +177,130 @@ document.getElementById('attachment').style.display = 'block'
   "reargrip",
   "ammo"
   ]
+  operatorskills = [
+  "Annihilator",
+  "Sparrow",
+  "Purifier",
+  "TAK-5",
+  "Kinetic Armor",
+  "War Machine",
+  "Death Machine",
+  "Transform Shield",
+  "K9 Unit",
+  "Tempest",
+  "H.I.V.E.",
+  "Gravity Spikes",
+  "Shadow Blade",
+  "Equilator",
+  "Ballistic Shield",
+  "Gravity Vortex Gun",
+  "Bull Charge",
+  "Munitions Box",
+  "Reactor Core",
+  "Claw"]
+
+  lethal = [
+  "Frag Grenade",
+  "Sticky Grenade",
+  "Trip Mine",
+  "Combat Axe",
+  "Thermite",
+  "Molotov Cocktail",
+  "Contact Grenade"]
+  tactical = [
+  "Smoke Grenade",
+  "Flashbank Grenade",
+  "Concussion Grenade",
+  "EMP",
+  "Trophy System",
+  "Cryo Bomb",
+  "Heartbeat Sensor",
+  "Gas Grenade",
+  "Storm Ball",
+  "Echo Grenade",
+  "Flash Drone",
+  "Decoy Grenade"
+  ]
+  scorestreaks = [
+  "Shield Turrent",
+  "UAV",
+  "Shock RC",
+  "Hunter Killer Drone",
+  "Care Package",
+  "Counter-UAV",
+  "MQ-27 Dragonfire",
+  "SAM Turrent",
+  "Predator Missile",
+  "Hawk X3",
+  "Sentry Gun",
+  "Lightning Strike",
+  "XS1 Goliath",
+  "Cluster Strike",
+  "Orbital Laser",
+  "Stealth Chopper",
+  "Swarm",
+  "EMP System",
+  "Napalm",
+  "Advanced UAV",
+  "VTOL",
+  "Chopper Gunner"]
+  perkblue = ["Dead Silence",
+  "Persistence",
+  "Hardline",
+  "Demo Expert",
+  "Tacitcal Mask",
+  "Alert",
+  "Engineer",
+  "Sharpnel",
+  "High Alert",
+  "Launcher Plus"]
+  perkred= [
+  "Lightweight",
+  "Fast Recover",
+  "Flask Jacket",
+  "Skulker",
+  "Agile",
+  "Restock",
+  "Tactician",
+  "Overclock",
+  "Martyrdom",
+  "Iron Lungs"]
+  perkgreen = [
+  "Quick Fix",
+  "Vulture",
+  "Thoughness",
+  "Tracker",
+  "Ghost",
+  "Cold-Blooded",
+  "Hard Wired",
+  "Amped",
+  "Recon",
+  "Gung-Ho",
+  ] 
   shuffle(attachment)
   data1 = shuffle(attachment)
   maindata = shuffle(data)
   const a = shuffle(attachment)
   b = data[0].attachments
-  console.log("----------")
- // var q = document.createElement('h1');
- // mainContainer.appendChild(q)
+  shuffledoperator = shuffle(operatorskills)
+  document.getElementById('operator').innerText = shuffledoperator[0]
+  shuffledlethal = shuffle(lethal)
+  document.getElementById('lethal').innerText = shuffledlethal[0]
+  shuffledtactical = shuffle(tactical)
+  document.getElementById('tactical').innerText = shuffledtactical[0]
+  shuffledscorestreaks = shuffle(scorestreaks)
+  shuffledscorestreaks = scorestreaks.slice(0,3)
+  document.getElementById('scorestreaks').innerText = shuffledscorestreaks
+  shuffledperkred = shuffle(perkred)
+  document.getElementById('perkred').innerText = shuffledperkred[0]
+  shuffledperkgreen = shuffle(perkgreen)
+  document.getElementById('perkgreen').innerText = shuffledperkgreen[0]
+  shuffledperkblue = shuffle(perkblue)
+  document.getElementById('perkblue').innerText = shuffledperkblue[0]
+
+
+
+
   console.log(data1)
   document.getElementById('generateloadout').style.display = 'block'
   document.getElementById('generateloadout').innerText = maindata[0].gun

@@ -11,10 +11,11 @@ body{
     min-height: 100vh;
     background: rgb(7,6,40);
     box-sizing: content-box;
-
-background: linear-gradient(0deg, #61677C 0%, #61677C 100%);
+    background: linear-gradient(0deg, #61677C 0%, #61677C 100%);
 }
-
+.half{
+    width: 50%;
+  }
 @media only screen and (max-width: 900px) {
     *{
         font-size: smaller;
@@ -45,12 +46,15 @@ background: linear-gradient(0deg, #61677C 0%, #61677C 100%);
         margin: 10px;
         width: 100% ;
     }
-    .row{
+    .row .half{
         width: 100%;
     }
     .row col-6{
         width: 100%;
         flex-wrap: wrap;
+    }
+    .half{
+        width: 100%;
     }
   }
 .container{
@@ -87,10 +91,12 @@ h3{
     font-size: 15px;
     color: rgb(191, 11, 179);
 }
+.extras{
+    display: none;
+}
 
 .row{
     display: none;
-
 }
 
 button{
@@ -164,7 +170,7 @@ p{
 }
 .vl {
     border-left: 1px solid white;
-    height: 45%;
+    height: 40%;
     position: absolute;
     left: 50%;
     right: 0;
