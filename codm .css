@@ -16,22 +16,41 @@ background: linear-gradient(0deg, #61677C 0%, #61677C 100%);
 }
 
 @media only screen and (max-width: 900px) {
-    body{
-        color: #5B7DB1;
+    *{
+        font-size: smaller;
     }
     .loadoutgen{
         width: 70% !important;
     }
-    .col{
-        color: aquamarine;
-    }
+    
     .maintext{
         font-size: 10px !important;
+        flex-wrap: wrap;
 
 
+    }
+    .container{
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+
+    .vl{
+        display: none;  
+        border-left: 0px;
     }
     .attachmentstext{
         font-size: 10px !important;
+        border: 1px white;
+        margin: 10px;
+        width: 100% ;
+    }
+    .row{
+        width: 100%;
+    }
+    .row col-6{
+        width: 100%;
+        flex-wrap: wrap;
     }
   }
 .container{
@@ -52,7 +71,7 @@ background: linear-gradient(0deg, #61677C 0%, #61677C 100%);
     border: none;
     outline: none;
     color: #fff;
-    background: #5B7DB1;
+    background: #343c49;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -66,10 +85,12 @@ background: linear-gradient(0deg, #61677C 0%, #61677C 100%);
 }
 h3{
     font-size: 15px;
+    color: rgb(191, 11, 179);
 }
 
 .row{
     display: none;
+
 }
 
 button{
@@ -80,7 +101,13 @@ button{
 p{
     font-size: 20px;
 }
-
+.attachmentstext{
+    text-align: center;
+    padding: 10px 10px 10px 10px ;
+    width: 90%;
+    border-radius: 15px;
+    border: 2px solid white;
+}
 .loadoutimage{
     width: 100%;
     border: 5px solid black;
@@ -135,3 +162,11 @@ p{
 #mainmainmain{
     color: white;
 }
+.vl {
+    border-left: 1px solid white;
+    height: 45%;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 30%;
+  }
