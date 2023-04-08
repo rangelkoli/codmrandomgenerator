@@ -12,10 +12,10 @@
     <body>
 
 
-        <div class="container">
+        <div class="container-fluid">
             <h2 id="maintext">Welcome to CODM Random Loadout Generator. Click on the button to Generate a Loadout</h2>
         </div>
-        <div class="container" id="maincontainer">
+        <div class="container-fluid" id="maincontainer">
             <button type="button" onclick="hello()" id="loadoutgen" class="loadoutgen">Generate Loadout</button>
 
             <p>Attachments</p>
@@ -25,56 +25,60 @@
                 <p class="challenge" id="challenge">Challenge</p>
 
             </div>
-            <div class="col-md-12">
-                <div class="col">
-                    <div class="attachment" id="attachment">
-                        <div class="container">
-                            <div class="row">
+            <div class="row">
 
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="row">
-                                        <h3 style=" text-shadow: 2px 2px #000000;">Primary Loadout</h3>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="col">
+                        <div class="attachment" id="attachment">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <h3 style=" text-shadow: 2px 2px #000000;">Primary Loadout</h3>
+                                        </div>
+                                        <div class="attachmentstext">
+                                            <h1 id="generateloadout" style="  text-shadow: 2px 2px #000000;"></h1>
+                                            <h4 id="muzzle">Muzzle</h4>
+                                            <h4 id="barrel">Barrel</h4>
+                                            <h4 id="optic">Optic</h4>
+                                            <h4 id="stock">Stock</h4>
+                                            <h4 id="perks">Perks</h4>
+                                            <h4 id="laser">Laser</h4>
+                                            <h4 id="underbarrel">UnderBarrel</h4>
+                                            <h4 id="ammunition">Ammunition</h4>
+                                            <h4 id="reargrip">Rear Grip</h4>
+                                        </div>
                                     </div>
-                                    <div class="attachmentstext">
-                                        <h1 id="generateloadout" style="  text-shadow: 2px 2px #000000;"></h1>
-                                        <h4 id="muzzle">Muzzle</h4>
-                                        <h4 id="barrel">Barrel</h4>
-                                        <h4 id="optic">Optic</h4>
-                                        <h4 id="stock">Stock</h4>
-                                        <h4 id="perks">Perks</h4>
-                                        <h4 id="laser">Laser</h4>
-                                        <h4 id="underbarrel">UnderBarrel</h4>
-                                        <h4 id="ammunition">Ammunition</h4>
-                                        <h4 id="reargrip">Rear Grip</h4>
+
+
+                                    <div class="col-lg-6 col-md-12">
+
+                                        <div class="row">
+                                            <h3 style="text-shadow: 2px 2px #000000;                  ">Secondary Loadout</h3>
+                                        </div>
+                                        <div class="row">
+                                            <p>
+                                                Gun Loadout Attachments
+                                            </p>
+                                        </div>
                                     </div>
+
                                 </div>
-
-
-                                <div class="col-lg-6 col-md-12">
-
-                                    <div class="row">
-                                        <h3 style="text-shadow: 2px 2px #000000;                  ">Secondary Loadout</h3>
-                                    </div>
-                                    <div class="row">
-                                        <p>
-                                            Gun Loadout Attachments
-                                        </p>
-                                    </div>
-                                </div>
-
                             </div>
+                            <div></div>
+                            <!-- <img src="" class="loadoutimage" id="loadoutimage"> -->
                         </div>
-                        <div></div>
-                        <!-- <img src="" class="loadoutimage" id="loadoutimage"> -->
                     </div>
+
+                    <div class="col-md-2"></div>
                 </div>
 
-
             </div>
-            <hr>
 
             <div class="extras" id="extras">
-                <div class="container">
+                <div class="container-fluid">
 
                     <div class="row" id="extratext">
                         <div class="col-lg-4 col-sm-12">
