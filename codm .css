@@ -6,6 +6,9 @@
 
 }
 body{
+    padding-top: 20px;
+    padding-bottom: 35px;
+
     background: black;
     color: white;
     font-size: smaller;
@@ -18,6 +21,9 @@ body{
     width: 50%;
   }
 @media only screen and (max-width: 900px) {
+    #challenge{
+        font-size: 24px;
+    }
     *{
         font-size: smaller;
     }
@@ -85,7 +91,7 @@ body{
 }
 h3{
     font-size: 15px;
-    color: rgb(74, 109, 237);
+    color: rgb(193, 237, 74);
 }
 .extras{
     display: none;
