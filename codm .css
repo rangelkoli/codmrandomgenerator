@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
     background: rgb(7,6,40);
     box-sizing: content-box;
-    background: linear-gradient(0deg, #61677C 0%, #61677C 100%);
+    background: linear-gradient(0deg, #09090b 0%, #0a0a0a 100%);
 }
 .half{
     width: 50%;
@@ -89,10 +89,12 @@ body{
 }
 h3{
     font-size: 15px;
-    color: rgb(191, 11, 179);
+    color: rgb(11, 167, 191);
 }
 .extras{
     display: none;
+    font-size: 30px;
+
 }
 
 .row{
@@ -175,4 +177,7 @@ p{
     left: 50%;
     right: 0;
     top: 30%;
+  }
+  #extratext{
+    font-size: 32px;
   }
