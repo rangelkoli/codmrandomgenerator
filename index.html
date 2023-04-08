@@ -101,8 +101,13 @@
                         </div>
                         <div class="col-lg-4 col-sm-12">
                             <h3>Perks</h3>
+                            <h3>Red Perk</h3>
                             <div class="perkred" id="perkred"></div>
+                            <h3>Green Perk</h3>
+
                             <div class="perkgreen" id="perkgreen"></div>
+                            <h3>Blue Perk</h3>
+
                             <div class="perkblue" id="perkblue"></div>
 
                         </div>
@@ -273,6 +278,19 @@ function appendData(data) {
         "Recon",
         "Gung-Ho",
     ]
+    challenges = [
+        "Drop a Nuke in Ranked",
+        "Go on 2 Merciless Streaks(10 Kills without Dying)",
+        "Get 40 Kills in a Single Game",
+        "Get 10+ Captures in 1 game(Domination)",
+        "Stay in the Objective Point for more than 1 min(Hardpoint)",
+        "Get 10+ Kills in Search and Destroy"
+    ]
+    suffledchallenges = shuffle(challenges)
+    document.getElementById('challenge').innerText = suffledchallenges[0]
+    document.getElementById('challenge').style.display = 'block'
+
+
     shuffle(attachment)
     data1 = shuffle(attachment)
     maindata = shuffle(data)
