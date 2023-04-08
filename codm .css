@@ -8,6 +8,7 @@
 body{
     background: black;
     color: white;
+    font-size: smaller;
     min-height: 100vh;
     background: rgb(7,6,40);
     box-sizing: content-box;
@@ -165,14 +166,7 @@ p{
 #mainmainmain{
     color: white;
 }
-.vl {
-    border-left: 1px solid white;
-    height: 40%;
-    position: absolute;
-    left: 50%;
-    right: 0;
-    top: 30%;
-  }
+
   #extratext{
-    font-size: 32px;
+    font-size: 24px;
   }
