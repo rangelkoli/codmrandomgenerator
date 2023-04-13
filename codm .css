@@ -23,7 +23,7 @@ body{
   }
 @media only screen and (max-width: 900px) {
     #challenge{
-        font-size: 24px;
+        font-size: 20px;
     }
     *{
         font-size: smaller;
@@ -91,12 +91,12 @@ body{
     color: black;
 }
 h3{
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(193, 237, 74);
 }
 .extras{
     display: none;
-    font-size: 30px;
+    font-size: 24px;
 
 }
 
@@ -110,7 +110,7 @@ button{
 }
 
 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 .attachmentstext{
     text-align: center;
@@ -124,13 +124,13 @@ p{
     border: 5px solid black;
 }
 .challenge{
-    font-size: 30px;
+    font-size: 24px;
 }
 #challenge{
     display: none;
 }
 .challenge h4{
-    font-size: 50px;
+    font-size: 40px;
 }
 .attachment{
     display: none;
